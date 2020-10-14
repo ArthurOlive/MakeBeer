@@ -8,11 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-<<<<<<< HEAD
-    <jar href="CervejariaApp.jar" size="58944" download="eager" />
-=======
     <jar href="CervejariaApp.jar" size="93105" download="eager" />
->>>>>>> d46dcefe2ab62e077e56c8869673a8a4f2930500
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CervejariaApp" >
     <param name="requiredFXVersion" value="8.0+"/>

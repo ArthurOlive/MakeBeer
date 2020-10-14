@@ -26,9 +26,6 @@ public class MainApplication extends Application {
     
     //Scenes opened
     public static Stage primaryStage;
-    
-    
-    private static ArrayList<onChangeScreen> listenners = new ArrayList<onChangeScreen>();
 
     public static interface onChangeScreen{
             void onScreenChanged(Scene newScreen, Object userData);
@@ -43,7 +40,7 @@ public class MainApplication extends Application {
         //seta titulo do sistema
         primaryStage.setTitle("Make Beer");
         
-        AnchorPane home = FXMLLoader.load(getClass().getResource("/views/Calculadora.fxml"));
+        AnchorPane home = FXMLLoader.load(getClass().getResource("/views/Home.fxml"));
         homePane = new Scene(home);
 
         stage.setScene(homePane);
@@ -60,13 +57,20 @@ public class MainApplication extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+     
+    private static ArrayList<onChangeScreen> listenners = new ArrayList<onChangeScreen>();
+
+    public static void addOnChangeScreenListenner(onChangeScreen newListener) {
+         listenners.add(newListener);
+    }
     
-   public static void addOnChangeScreenListenner(onChangeScreen newListener) {
-        listenners.add(newListener);
-   }
-    
-   
     public static Scene getHomeScene() {
         return homePane;
+    }
+    
+    private static void notifyAllList(Scene focusScreen, Object userData) {
+        for (onChangeScreen l : listenners) {
+                l.onScreenChanged(focusScreen, userData);
+        }
     }
 }
