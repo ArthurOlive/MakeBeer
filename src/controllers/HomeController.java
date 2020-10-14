@@ -18,6 +18,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import models.ReceitasModel;
 
@@ -53,7 +56,19 @@ public class HomeController implements Initializable {
     private Pane config;
     
     @FXML
-    private ListView<Receita> vListReceitas;
+    private TableView<Receita> tListReceitas;
+    
+    @FXML
+    private TableColumn<Receita, Integer> tCheckReceita;
+
+    @FXML
+    private TableColumn<Receita, String> tNomeReceita;
+    
+    @FXML
+    private TableColumn<Receita, String> tCervejaReceita;
+
+    @FXML
+    private TableColumn<Receita, String> tAutorReceita;
     
     private List<Receita> listReceitas = new ArrayList<>();
     
@@ -73,14 +88,18 @@ public class HomeController implements Initializable {
     }
     
     public void loadingReceitas(){
-        
+        /*
+        tCheckReceita.setCellValueFactory(new PropertyValueFactory<Receita, Integer>("check"));
+        tNomeReceita.setCellValueFactory(new PropertyValueFactory<Receita, String>("nome"));
+        tAutorReceita.setCellValueFactory(new PropertyValueFactory<Receita, String>("autor.nome"));
+        tCervejaReceita.setCellValueFactory(new PropertyValueFactory<Receita, String>("cerveja.)");
+      
         Receita r1 = receitasModel.getReceitaDefault();
-        
         listReceitas.add(r1);
-        
         observable = FXCollections.observableArrayList(listReceitas);
         
-        vListReceitas.setItems(observable);
+        tListReceitas.setItems(observable);
+        */
     }
     
     @Override

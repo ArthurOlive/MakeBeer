@@ -16,7 +16,8 @@ public class Receita {
 	private List<Etapa> etapas;
 	private Cerveja cerveja;
 	private Autor autor;
-	
+        private String nome;
+      
 	public Receita(Cerveja cerveja, Autor autor) {
 		super();
 		this.cerveja = cerveja;
@@ -64,6 +65,12 @@ public class Receita {
 	}
 	public void setAutor(Autor autor) {
 		this.autor = autor;
+	}
+        public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	public void adicionarIngrediente(Ingrediente ingreditente) {
