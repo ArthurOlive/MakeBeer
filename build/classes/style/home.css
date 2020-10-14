@@ -5,3 +5,14 @@
 .mainFxmlClass {
 
 }
+
+.menu-button{
+    -fx-background-color: #fff;
+    -fx-border-color: #fff;
+    -fx-border-width: 0px;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover{
+    -fx-background-color: #f1f1f1;
+}

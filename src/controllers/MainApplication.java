@@ -10,6 +10,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -40,13 +41,17 @@ public class MainApplication extends Application {
         primaryStage = stage;
 
         //seta titulo do sistema
-        //primaryStage.setTitle("Make Beer");
+        primaryStage.setTitle("Make Beer");
         
-        AnchorPane home = FXMLLoader.load(getClass().getResource("Home.fxml"));
+        AnchorPane home = FXMLLoader.load(getClass().getResource("/views/Home.fxml"));
         homePane = new Scene(home);
 
         stage.setScene(homePane);
         stage.show();
+        
+        Image image = new Image("/img/icon.png");
+
+        stage.getIcons().add(image);
     }
 
     /**
