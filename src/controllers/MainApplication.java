@@ -43,7 +43,7 @@ public class MainApplication extends Application {
         //seta titulo do sistema
         primaryStage.setTitle("Make Beer");
         
-        AnchorPane home = FXMLLoader.load(getClass().getResource("/views/Home.fxml"));
+        AnchorPane home = FXMLLoader.load(getClass().getResource("/views/Calculadora.fxml"));
         homePane = new Scene(home);
 
         stage.setScene(homePane);
