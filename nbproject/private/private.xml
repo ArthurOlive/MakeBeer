@@ -5,7 +5,9 @@
         <group>
             <file>file:/C:/Users/Arthur/Documents/NetBeansProjects/CervejariaApp/src/controllers/MainApplication.java</file>
             <file>file:/C:/Users/Arthur/Documents/NetBeansProjects/CervejariaApp/src/style/home.css</file>
+            <file>file:/C:/Users/Arthur/Documents/NetBeansProjects/CervejariaApp/src/models/ReceitasModel.java</file>
             <file>file:/C:/Users/Arthur/Documents/NetBeansProjects/CervejariaApp/src/controllers/HomeController.java</file>
+            <file>file:/C:/Users/Arthur/Documents/NetBeansProjects/CervejariaApp/src/beans/Receita.java</file>
         </group>
     </open-files>
 </project-private>
