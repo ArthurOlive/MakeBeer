@@ -13,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
@@ -39,7 +40,8 @@ public class MainApplication extends Application {
 
         //seta titulo do sistema
         primaryStage.setTitle("Make Beer");
-        
+        primaryStage.setResizable(false);
+                
         AnchorPane home = FXMLLoader.load(getClass().getResource("/views/Home.fxml"));
         homePane = new Scene(home);
 

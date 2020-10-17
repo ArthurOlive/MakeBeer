@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controllers.CalculadoraController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CalculadoraController">
     <stylesheets>
         <URL value="@/style/calculadora.css" />
     </stylesheets>
@@ -28,7 +28,7 @@
                         <TextField fx:id="inputUtilizacao" layoutX="211.0" layoutY="150.0" onKeyPressed="#calcularIbu" onKeyReleased="#calcularIbu" prefHeight="25.0" prefWidth="134.0" />
                         <TextField fx:id="inputMassaLupulu" layoutX="51.0" layoutY="212.0" onKeyPressed="#calcularIbu" onKeyReleased="#calcularIbu" prefHeight="25.0" prefWidth="132.0" />
                         <TextField fx:id="inputUnidadeAlfa" layoutX="211.0" layoutY="212.0" onKeyPressed="#calcularIbu" onKeyReleased="#calcularIbu" prefHeight="25.0" prefWidth="134.0" />
-                        <Button fx:id="btnLimparIbu" layoutX="293.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#limparIbu" text="Limpar" />
+                        <Button fx:id="btnLimparIbu" layoutX="260.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#limparIbu" prefHeight="43.0" prefWidth="85.0" text="Limpar" />
                      </children>
                   </AnchorPane>
             </content>
@@ -41,7 +41,7 @@
                         <TextField fx:id="inputDensidadePre" layoutX="51.0" layoutY="150.0" onKeyPressed="#calcularAbv" onKeyReleased="#calcularAbv" prefHeight="25.0" prefWidth="293.0" />
                         <Label layoutX="51.0" layoutY="187.0" text="Densidade Pós-fermentação" />
                         <TextField fx:id="inputDensidadePos" layoutX="51.0" layoutY="212.0" onKeyPressed="#calcularAbv" onKeyReleased="#calcularAbv" prefHeight="25.0" prefWidth="293.0" />
-                        <Button fx:id="btnLimparAbv" layoutX="293.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#limparAbv" text="Limpar" />
+                        <Button fx:id="btnLimparAbv" layoutX="260.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#limparAbv" prefHeight="43.0" prefWidth="85.0" text="Limpar" />
                         <TextField fx:id="abvField" editable="false" layoutX="51.0" layoutY="36.0" prefHeight="65.0" prefWidth="295.0" />
                      </children>
                   </AnchorPane>

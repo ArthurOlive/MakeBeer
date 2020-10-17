@@ -38,6 +38,9 @@ public class HomeController implements Initializable {
     private ReceitasModel receitasModel = new ReceitasModel();
     
     @FXML
+    private Button btn_estoque;
+
+    @FXML
     private Button btn_config;
 
     @FXML
@@ -47,6 +50,9 @@ public class HomeController implements Initializable {
     private Button btn_calc;
 
     @FXML
+    private Button btn_cervejas;
+
+    @FXML
     private Pane receitas;
 
     @FXML
@@ -54,6 +60,12 @@ public class HomeController implements Initializable {
 
     @FXML
     private Pane config;
+    
+    @FXML 
+    private Pane cervejas;
+    
+    @FXML 
+    private Pane estoque;
     
     @FXML
     private TableView<Receita> tListReceitas;
@@ -84,6 +96,10 @@ public class HomeController implements Initializable {
             calculadora.toFront();
         } else if (event.getSource() == btn_config) {
             config.toFront();
+        }  else if (event.getSource() == btn_cervejas) {
+            cervejas.toFront();
+        }  else if (event.getSource() == btn_estoque) {
+            estoque.toFront();
         }
     }
     
